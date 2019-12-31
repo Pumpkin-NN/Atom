@@ -15,6 +15,11 @@ public:
   int getLength(){
     return length;
   }
+
+  void setLength(int l){
+    length = l;
+  }
+
   int area(){
     return length * breath;
   }
@@ -41,4 +46,8 @@ int main(){
   area = r.area();
 
   printf("The new area is %d\n", area);
+
+  r.setLength(30);
+
+  printf("The length is %d\n", r.getLength());
 }
