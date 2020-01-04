@@ -44,6 +44,7 @@ public:
 
 
 // Class Functions
+//"::" is the Scope Resolution Operator
 int Rectangle::area(){
   return length * breath;
 }

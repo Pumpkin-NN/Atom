@@ -31,6 +31,6 @@ int main(){
   int a = 10;
   int b = 20;
   swap(&a, &b);
-  printf("Passing parameters by Address\n");
+  printf("Passing parameters by Address, modifying the actual parameters\n");
   printf("%d\n%d\n",a, b);
 }

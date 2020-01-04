@@ -26,6 +26,12 @@ int main(){
   printf("%d\n%d\n", r.length, r.breath);
 */
   changeLength(&r, 20);
+  //Call by Address change the actual parameters!
   printf("%d\n",r.length);
 
 }
+
+
+// Array can only be passes by call by address
+// But, it a Structure contains array, the because the Structure can be called by value, so the arrays inside the structure could be called by value.
+// Call by Value Method does not change the actual parameters.

@@ -33,6 +33,7 @@ int main(){
   printf("Structure as parameters: \n");
   struct Rectangle r = {10,5};
   printf("%d\n", area(r));
+  //Call by Reference change the actual parameters!
   printf("%d\n%d\n", r.length, r.breath);
 
 }
