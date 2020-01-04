@@ -14,13 +14,17 @@ int main(){
   //Declear a pointer
   int (*fp)(int, int);
   int maximum, minimum;
-  //Initial the pointer, point to the function max
+  //Assign the pointer function
+  //Point to the function max
   fp = max;
   maximum = (*fp)(10, 5);
   printf("The max number is: %d\n", maximum);
 
-  //Reassign the pointer
+  //Reassign the pointer function
+  //Point to the function min
   fp = min;
   minimum = (*fp)(30, 20);
   printf("The min number is: %d\n", minimum);
 }
+
+// Close to the 
