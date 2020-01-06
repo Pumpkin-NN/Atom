@@ -16,15 +16,17 @@ int main(){
   int maximum, minimum;
   //Assign the pointer function
   //Point to the function max
+  //function max is called
   fp = max;
   maximum = (*fp)(10, 5);
   printf("The max number is: %d\n", maximum);
 
   //Reassign the pointer function
   //Point to the function min
+  //function min is called
   fp = min;
   minimum = (*fp)(30, 20);
   printf("The min number is: %d\n", minimum);
 }
 
-// Close to the 
+// Close to the polymorphism
