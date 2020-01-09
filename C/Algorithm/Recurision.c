@@ -18,6 +18,6 @@ void func_recur2(n){
 
 int main(){
   int n = 3;
-  //unc_recur1(n);
-  func_recur2(n);
+  //func_recur1(n);
+  //func_recur2(n);
 }
