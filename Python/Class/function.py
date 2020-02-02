@@ -80,4 +80,4 @@ def increment(time, seconds):
 
     print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
 
-increment(sum, 1800000)
+increment(sum, 1800100)
