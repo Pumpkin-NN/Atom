@@ -72,7 +72,10 @@ def increment(time, seconds):
     if d == 0:
         time.hour = time.hour % 24
     else:
-        print(f'next {d} day')
+        if d == 1:
+            print(f'next {d} day')
+        else:
+            print(f'next {d} days')
         time.hour = time.hour % 24
 
     print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
