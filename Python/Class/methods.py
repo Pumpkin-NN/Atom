@@ -47,5 +47,34 @@ def add_time(t1, t2):
         print("next day, ")
 
     print('%.2d:%.2d:%.2d' % (sum.hour, sum.minute, sum.second))
+    return sum
 
-add_time(start, duration)
+sum = add_time(start, duration)
+
+
+# Modifier
+def increment(time, seconds):
+    n = seconds // 60
+    m = seconds % 60
+
+    if n == 0:
+        time.second = seconds
+    else:
+        time.second = m
+        t = n // 60
+        if t == 0:
+            time.minute += n
+        else:
+            time.minute += n % 60
+            time.hour += t
+
+    d = time.hour // 24
+    if d == 0:
+        time.hour = time.hour % 24
+    else:
+        print(f'next {d} day')
+        time.hour = time.hour % 24
+
+    print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
+
+increment(sum, 1800000)
