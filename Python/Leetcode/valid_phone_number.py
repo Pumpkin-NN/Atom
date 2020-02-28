@@ -4,13 +4,16 @@ def valid_phone_number():
 
         for line in lines:
             # print(line)
-
             if "-" not in line:
                 if "(" and ")" not in line:
                     continue
             else:
                 if line.count("-") != 2:
                     if "(" and ")" not in line:
+                        continue
+                    if line.index(")") < line.index("("):
+                        continue
+                    if line.index("(") < line.index("-")<line.index(")"):
                         continue
                 print(line)
 
@@ -21,6 +24,13 @@ def valid_phone_number():
                 continue
             elif "-" not in line:
                 continue
+            else:
+                print(line)
+            '''
+            '''
+            for i in line:
+                if ord(i) == 32:
+                    break
             else:
                 print(line)
             '''
